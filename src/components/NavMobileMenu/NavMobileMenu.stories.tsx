@@ -6,7 +6,7 @@ const meta = {
   component: NavMobileMenu,
   tags: ['autodocs'],
   args: {
-    title: 'Compound',
+    title: <img src="brand/logo.svg" alt="Compound" height={16} />,
     alwaysVisible: true,
     children: [
       <NavMobileMenu.Link key="1" href="#" active>Dashboard</NavMobileMenu.Link>,

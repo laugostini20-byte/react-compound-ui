@@ -6,7 +6,10 @@ import { Navbar } from './Navbar';
 function Demo() {
   return (
     <Navbar>
-      <Navbar.Brand href="#">◆ Compound</Navbar.Brand>
+      <Navbar.Brand href="#">
+        <img src="brand/mark.svg" alt="" width={28} height={28} />
+        <img src="brand/logo.svg" alt="Compound" height={18} />
+      </Navbar.Brand>
       <Navbar.Links>
         <Navbar.Link href="#" active>Dashboard</Navbar.Link>
         <Navbar.Link href="#">Projects</Navbar.Link>
@@ -14,7 +17,7 @@ function Demo() {
       </Navbar.Links>
       <Navbar.Actions>
         <Button size="sm" variant="secondary">Sign in</Button>
-        <NavMobileMenu title="Menu">
+        <NavMobileMenu title={<img src="brand/logo.svg" alt="Compound" height={16} />}>
           <NavMobileMenu.Link href="#" active>Dashboard</NavMobileMenu.Link>
           <NavMobileMenu.Link href="#">Projects</NavMobileMenu.Link>
           <NavMobileMenu.Link href="#">Reports</NavMobileMenu.Link>

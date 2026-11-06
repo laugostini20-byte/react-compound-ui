@@ -4,7 +4,7 @@ import { create } from 'storybook/theming';
 addons.setConfig({
   theme: create({
     base: 'light',
-    brandTitle: 'Compound UI',
+    brandTitle: 'Compound',
     brandUrl: 'https://github.com/laugostini20-byte/react-compound-ui',
     brandImage: 'brand/logo.svg',
     brandTarget: '_blank',

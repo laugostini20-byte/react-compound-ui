@@ -3,11 +3,13 @@ import { Sidebar } from './Sidebar';
 
 function Demo({ defaultCollapsed }: { defaultCollapsed?: boolean }) {
   return (
-    <div style={{ height: 460 }}>
+    <div style={{ height: 540 }}>
       <Sidebar defaultCollapsed={defaultCollapsed}>
         <Sidebar.Header>
-          <span>◆ Compound</span>
-          <Sidebar.Toggle />
+          <span style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <img src="brand/mark.svg" alt="" width={28} height={28} />
+            <span className="rcu-sidebar__label"><img src="brand/logo.svg" alt="Compound" height={16} /></span>
+          </span>
         </Sidebar.Header>
         <Sidebar.Section title="Workspace">
           <Sidebar.Item href="#" icon="⌂" active>Home</Sidebar.Item>
@@ -19,6 +21,7 @@ function Demo({ defaultCollapsed }: { defaultCollapsed?: boolean }) {
         </Sidebar.Section>
         <Sidebar.Footer>
           <Sidebar.Item href="#" icon="?">Help</Sidebar.Item>
+          <Sidebar.Toggle />
         </Sidebar.Footer>
       </Sidebar>
     </div>
