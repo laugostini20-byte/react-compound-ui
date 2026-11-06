@@ -1,0 +1,39 @@
+/* Design tokens. Override any of these in your app to re-theme the library. */
+:root {
+  --rcu-font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --rcu-color-primary: #4f46e5;
+  --rcu-color-primary-hover: #4338ca;
+  --rcu-color-primary-fg: #ffffff;
+  --rcu-color-danger: #dc2626;
+  --rcu-color-danger-hover: #b91c1c;
+
+  --rcu-color-bg: #ffffff;
+  --rcu-color-surface: #ffffff;
+  --rcu-color-muted: #f4f4f5;
+  --rcu-color-border: #e4e4e7;
+  --rcu-color-text: #18181b;
+  --rcu-color-text-muted: #71717a;
+
+  --rcu-radius-sm: 6px;
+  --rcu-radius-md: 10px;
+  --rcu-radius-lg: 14px;
+
+  --rcu-space-1: 4px;
+  --rcu-space-2: 8px;
+  --rcu-space-3: 12px;
+  --rcu-space-4: 16px;
+  --rcu-space-6: 24px;
+
+  --rcu-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06), 0 1px 3px rgb(0 0 0 / 0.08);
+  --rcu-focus-ring: 0 0 0 3px rgb(79 70 229 / 0.35);
+}
+
+[data-theme='dark'] {
+  --rcu-color-bg: #09090b;
+  --rcu-color-surface: #18181b;
+  --rcu-color-muted: #27272a;
+  --rcu-color-border: #3f3f46;
+  --rcu-color-text: #fafafa;
+  --rcu-color-text-muted: #a1a1aa;
+}

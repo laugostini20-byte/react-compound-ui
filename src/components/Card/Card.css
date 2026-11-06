@@ -1,0 +1,35 @@
+.rcu-card {
+  font-family: var(--rcu-font);
+  color: var(--rcu-color-text);
+  background: var(--rcu-color-surface);
+  border: 1px solid var(--rcu-color-border);
+  border-radius: var(--rcu-radius-lg);
+  box-shadow: var(--rcu-shadow-sm);
+  overflow: hidden;
+}
+
+.rcu-card__header {
+  padding: var(--rcu-space-4) var(--rcu-space-6) 0;
+}
+
+.rcu-card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rcu-card__body {
+  padding: var(--rcu-space-4) var(--rcu-space-6);
+  color: var(--rcu-color-text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.rcu-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--rcu-space-2);
+  padding: var(--rcu-space-3) var(--rcu-space-6);
+  border-top: 1px solid var(--rcu-color-border);
+  background: var(--rcu-color-muted);
+}
