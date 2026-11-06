@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1342" width="2000" height="1342" role="img" aria-label="Compound UI">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1342" width="2000" height="1342" role="img" aria-label="Compound">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
@@ -63,12 +63,12 @@
   </g>
 
   <!-- Logo: mark + wordmark, centered on the screen -->
-  <g transform="translate(573 594) scale(2.6)">
+  <g transform="translate(717 594) scale(2.6)">
     <rect x="4" y="4" width="34" height="34" rx="9" fill="#0f766e"/>
     <rect x="18" y="18" width="34" height="34" rx="9" fill="#f97360"/>
     <path d="M18 27a9 9 0 0 1 9-9h11v11a9 9 0 0 1-9 9H18z" fill="#0b4f4a"/>
   </g>
-  <text x="746" y="704" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="84" font-weight="800" letter-spacing="-2">
-    <tspan fill="#2b6d66">&lt;</tspan><tspan fill="#073b37">compound</tspan><tspan fill="#e85a46">.ui</tspan><tspan fill="#2b6d66">/&gt;</tspan>
+  <text x="890" y="704" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="84" font-weight="800" letter-spacing="-2">
+    <tspan fill="#073b37">compound</tspan>
   </text>
 </svg>

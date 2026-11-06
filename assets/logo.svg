@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 56" width="300" height="56" role="img" aria-label="Compound UI">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 56" width="198" height="56" role="img" aria-label="Compound">
   <g>
     <rect x="4" y="4" width="34" height="34" rx="9" fill="#0f766e"/>
     <rect x="18" y="18" width="34" height="34" rx="9" fill="#f97360"/>
     <path d="M18 27a9 9 0 0 1 9-9h11v11a9 9 0 0 1-9 9H18z" fill="#0b4f4a"/>
   </g>
   <text x="66" y="37" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="27" font-weight="700" letter-spacing="-0.5">
-    <tspan fill="#5b7271">&lt;</tspan><tspan fill="#102a2a">compound</tspan><tspan fill="#f97360">.ui</tspan><tspan fill="#5b7271">/&gt;</tspan>
+    <tspan fill="#102a2a">compound</tspan>
   </text>
 </svg>
