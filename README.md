@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Compound UI" width="100%">
+  <img src="assets/compound-banner.png" alt="Compound UI" width="100%">
 </p>
 
 # react-compound-ui
