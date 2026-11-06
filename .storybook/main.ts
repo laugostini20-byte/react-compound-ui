@@ -12,6 +12,7 @@ const config: StorybookConfig = {
     "@storybook/addon-docs",
     "@storybook/addon-mcp"
   ],
+  "staticDirs": [{ "from": "../assets", "to": "/brand" }],
   "framework": "@storybook/react-vite"
 };
 export default config;

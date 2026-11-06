@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" role="img" aria-label="Compound">
+  <g>
+    <rect x="4" y="4" width="34" height="34" rx="9" fill="#0f766e"/>
+    <rect x="18" y="18" width="34" height="34" rx="9" fill="#f97360"/>
+    <path d="M18 27a9 9 0 0 1 9-9h11v11a9 9 0 0 1-9 9H18z" fill="#0b4f4a"/>
+  </g>
+</svg>

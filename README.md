@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo.svg" alt="Compound UI" width="360">
+  </picture>
+</p>
+
 # react-compound-ui
 
 My personal React component library for future apps, documented with [Storybook](https://storybook.js.org/) and published as a GitHub Package.
