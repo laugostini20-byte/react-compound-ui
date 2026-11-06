@@ -1,0 +1,7 @@
+.rcu-search { display: flex; align-items: center; gap: var(--rcu-space-2); padding-top: 0; padding-bottom: 0; font-family: var(--rcu-font); }
+.rcu-search__icon { color: var(--rcu-color-text-muted); font-size: 18px; transform: scaleX(-1); }
+.rcu-search__input { flex: 1; min-width: 0; height: 36px; padding: 0; border: none; background: none; font: inherit; color: inherit; }
+.rcu-search__input:focus { outline: none; }
+.rcu-search__input::-webkit-search-cancel-button { display: none; }
+.rcu-search__input::placeholder { color: var(--rcu-color-text-muted); }
+.rcu-search__clear { width: 24px; height: 24px; }

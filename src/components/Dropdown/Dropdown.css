@@ -1,0 +1,6 @@
+.rcu-dropdown { position: relative; }
+.rcu-dropdown__button { display: flex; justify-content: space-between; align-items: center; text-align: left; cursor: pointer; }
+.rcu-dropdown__placeholder { color: var(--rcu-color-text-muted); }
+.rcu-dropdown__chevron { color: var(--rcu-color-text-muted); }
+.rcu-dropdown__list { top: calc(100% + 4px); left: 0; right: 0; max-height: 240px; overflow-y: auto; }
+.rcu-dropdown__list .rcu-menu__item[aria-disabled='true'] { opacity: 0.5; cursor: not-allowed; }

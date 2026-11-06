@@ -1,0 +1,15 @@
+.rcu-file-list { display: flex; flex-direction: column; gap: var(--rcu-space-2); margin: 0; padding: 0; list-style: none; font-family: var(--rcu-font); color: var(--rcu-color-text); }
+.rcu-file-list__row { display: flex; align-items: center; gap: var(--rcu-space-3); padding: var(--rcu-space-3); border: 1px solid var(--rcu-color-border); border-radius: var(--rcu-radius-md); background: var(--rcu-color-surface); }
+.rcu-file-list__row[data-status='error'] { border-color: var(--rcu-color-danger); background: var(--rcu-color-danger-soft); }
+.rcu-file-list__icon { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px; border-radius: var(--rcu-radius-sm); background: var(--rcu-color-muted); color: var(--rcu-color-text-muted); font-weight: 700; }
+.rcu-file-list__row[data-status='done'] .rcu-file-list__icon { background: var(--rcu-color-success-soft); color: var(--rcu-color-success); }
+.rcu-file-list__row[data-status='error'] .rcu-file-list__icon { background: var(--rcu-color-danger); color: #fff; }
+.rcu-file-list__main { flex: 1; min-width: 0; }
+.rcu-file-list__top { display: flex; justify-content: space-between; gap: var(--rcu-space-3); font-size: 14px; }
+.rcu-file-list__name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.rcu-file-list__meta { flex-shrink: 0; font-size: 12px; color: var(--rcu-color-text-muted); font-variant-numeric: tabular-nums; }
+.rcu-file-list__bar { height: 4px; margin-top: 6px; border-radius: var(--rcu-radius-full); background: var(--rcu-color-muted); overflow: hidden; }
+.rcu-file-list__bar span { display: block; height: 100%; background: var(--rcu-color-primary); transition: width 0.2s ease; }
+.rcu-file-list__error { margin-top: 2px; font-size: 12px; color: var(--rcu-color-danger); }
+.rcu-file-list__retry { padding: 4px 10px; border: 1px solid var(--rcu-color-danger); border-radius: var(--rcu-radius-sm); background: none; color: var(--rcu-color-danger); font: 600 12px var(--rcu-font); cursor: pointer; }
+.rcu-file-list__retry:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); }

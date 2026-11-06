@@ -1,0 +1,3 @@
+.rcu-combobox { position: relative; }
+.rcu-combobox__list { top: calc(100% + 4px); left: 0; right: 0; max-height: 240px; overflow-y: auto; }
+.rcu-combobox__empty { padding: var(--rcu-space-2) var(--rcu-space-3); color: var(--rcu-color-text-muted); }

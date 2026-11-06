@@ -1,0 +1,6 @@
+.rcu-version-info { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--rcu-space-3); font-family: var(--rcu-font); font-size: 12px; color: var(--rcu-color-text-muted); }
+.rcu-version-info strong { color: var(--rcu-color-text); }
+.rcu-version-info__env { padding: 1px 8px; border-radius: var(--rcu-radius-full); background: var(--rcu-color-primary-soft); color: var(--rcu-color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; }
+.rcu-version-info__env--non-prod { background: var(--rcu-color-accent-soft); color: var(--rcu-color-accent-hover); }
+.rcu-version-info__commit { font-family: var(--rcu-font-mono); }
+.rcu-version-info__link { color: var(--rcu-color-primary); }

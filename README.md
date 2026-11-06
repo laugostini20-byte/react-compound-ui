@@ -40,11 +40,18 @@ Theme it by overriding the `--rcu-*` CSS variables (see `src/styles/tokens.css`)
 
 ## Components
 
-| Component | Parts |
-|-----------|-------|
-| `Button`  | variants `primary`, `secondary`, `ghost`, `danger`; sizes `sm`, `md`, `lg` |
-| `Card`    | `Card.Header`, `Card.Title`, `Card.Body`, `Card.Footer` |
-| `Tabs`    | `Tabs.List`, `Tabs.Trigger`, `Tabs.Panel` (keyboard accessible) |
+32 components, all themed by the **Lagoon** palette (teal `#0f766e` primary, coral `#f97360` accent) with a matching dark mode.
+
+| Group | Components |
+|-------|------------|
+| Actions | `Button`, `FileUploadButton`, `HelpButton` |
+| Forms | `Input`, `Checkbox`, `Switch`, `Slider`, `Dropdown`, `Combobox`, `DatePicker`, `Search` |
+| Files | `FileDropzone`, `FileList`, `FileUploadButton` |
+| Layout & navigation | `Navbar`, `NavMobileMenu`, `Sidebar`, `Breadcrumbs`, `Tabs`, `Accordion`, `Card` |
+| Overlays | `Dialog`, `HelpDialog`, `Lightbox`, `PopoverMenu`, `ContextMenu`, `Tooltip`, `Toast` (`ToastProvider` + `useToast`) |
+| Data & feedback | `Table`, `Badge`, `CodeBlock`, `ErrorState`, `VersionInfo` |
+
+Most are compound components, e.g. `Dialog.Header` / `Dialog.Body` / `Dialog.Footer`, `Table.Head` / `Table.Row` / `Table.Cell`, `Sidebar.Section` / `Sidebar.Item`. Every one has Storybook stories that double as browser tests.
 
 ## Development
 

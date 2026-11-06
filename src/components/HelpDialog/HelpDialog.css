@@ -1,0 +1,3 @@
+.rcu-help-dialog__search { margin-bottom: var(--rcu-space-3); }
+.rcu-help-dialog__empty { color: var(--rcu-color-text-muted); text-align: center; padding: var(--rcu-space-6) 0; margin: 0; }
+.rcu-help-dialog__footer { margin-top: var(--rcu-space-4); color: var(--rcu-color-text-muted); font-size: 13px; }

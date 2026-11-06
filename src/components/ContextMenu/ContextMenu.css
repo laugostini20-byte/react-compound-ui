@@ -1,0 +1,3 @@
+.rcu-context-menu__target { border-radius: var(--rcu-radius-md); }
+.rcu-context-menu__target:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); }
+.rcu-context-menu__content { position: fixed; }

@@ -1,0 +1,20 @@
+.rcu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  border-radius: var(--rcu-radius-full);
+  font-family: var(--rcu-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.rcu-badge__dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.rcu-badge--neutral { background: var(--rcu-color-muted); color: var(--rcu-color-text-muted); }
+.rcu-badge--primary { background: var(--rcu-color-primary-soft); color: var(--rcu-color-primary); }
+.rcu-badge--accent { background: var(--rcu-color-accent-soft); color: var(--rcu-color-accent-hover); }
+.rcu-badge--success { background: var(--rcu-color-success-soft); color: var(--rcu-color-success); }
+.rcu-badge--warning { background: var(--rcu-color-warning-soft); color: var(--rcu-color-warning); }
+.rcu-badge--danger { background: var(--rcu-color-danger-soft); color: var(--rcu-color-danger); }
+.rcu-badge--info { background: var(--rcu-color-info-soft); color: var(--rcu-color-info); }

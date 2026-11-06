@@ -1,0 +1,7 @@
+.rcu-checkbox { display: flex; align-items: flex-start; gap: var(--rcu-space-2); font-family: var(--rcu-font); color: var(--rcu-color-text); }
+.rcu-checkbox__input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--rcu-color-primary); cursor: pointer; }
+.rcu-checkbox__input:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); border-radius: 4px; }
+.rcu-checkbox__input:disabled { cursor: not-allowed; }
+.rcu-checkbox__input:disabled + .rcu-checkbox__text { opacity: 0.55; }
+.rcu-checkbox__text { display: flex; flex-direction: column; gap: 2px; }
+.rcu-checkbox__label { font-size: 14px; cursor: pointer; }

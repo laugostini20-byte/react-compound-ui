@@ -1,39 +1,222 @@
-/* Design tokens. Override any of these in your app to re-theme the library. */
+/* Design tokens: "Lagoon" theme (teal + coral). Override any of these in your app to re-theme the library. */
 :root {
   --rcu-font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --rcu-font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-  --rcu-color-primary: #4f46e5;
-  --rcu-color-primary-hover: #4338ca;
+  --rcu-color-primary: #0f766e;
+  --rcu-color-primary-hover: #115e59;
+  --rcu-color-primary-soft: #ccfbf1;
   --rcu-color-primary-fg: #ffffff;
-  --rcu-color-danger: #dc2626;
-  --rcu-color-danger-hover: #b91c1c;
+  --rcu-color-accent: #f97360;
+  --rcu-color-accent-hover: #e85a46;
+  --rcu-color-accent-soft: #ffe4de;
+  --rcu-color-danger: #be123c;
+  --rcu-color-danger-hover: #9f1239;
+  --rcu-color-danger-soft: #ffe4e6;
+  --rcu-color-success: #15803d;
+  --rcu-color-success-soft: #dcfce7;
+  --rcu-color-warning: #b45309;
+  --rcu-color-warning-soft: #fef3c7;
+  --rcu-color-info: #0369a1;
+  --rcu-color-info-soft: #e0f2fe;
 
-  --rcu-color-bg: #ffffff;
+  --rcu-color-bg: #f8fafa;
   --rcu-color-surface: #ffffff;
-  --rcu-color-muted: #f4f4f5;
-  --rcu-color-border: #e4e4e7;
-  --rcu-color-text: #18181b;
-  --rcu-color-text-muted: #71717a;
+  --rcu-color-muted: #eef3f3;
+  --rcu-color-border: #d5e0df;
+  --rcu-color-text: #102a2a;
+  --rcu-color-text-muted: #5b7271;
+  --rcu-color-overlay: rgb(6 24 24 / 0.55);
 
   --rcu-radius-sm: 6px;
   --rcu-radius-md: 10px;
   --rcu-radius-lg: 14px;
+  --rcu-radius-full: 999px;
 
   --rcu-space-1: 4px;
   --rcu-space-2: 8px;
   --rcu-space-3: 12px;
   --rcu-space-4: 16px;
   --rcu-space-6: 24px;
+  --rcu-space-8: 32px;
 
-  --rcu-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06), 0 1px 3px rgb(0 0 0 / 0.08);
-  --rcu-focus-ring: 0 0 0 3px rgb(79 70 229 / 0.35);
+  --rcu-shadow-sm: 0 1px 2px rgb(6 40 40 / 0.06), 0 1px 3px rgb(6 40 40 / 0.08);
+  --rcu-shadow-lg: 0 10px 30px rgb(6 40 40 / 0.18);
+  --rcu-focus-ring: 0 0 0 3px rgb(15 118 110 / 0.35);
+  --rcu-z-popover: 1000;
+  --rcu-z-modal: 1100;
+  --rcu-z-toast: 1200;
 }
 
 [data-theme='dark'] {
-  --rcu-color-bg: #09090b;
-  --rcu-color-surface: #18181b;
-  --rcu-color-muted: #27272a;
-  --rcu-color-border: #3f3f46;
-  --rcu-color-text: #fafafa;
-  --rcu-color-text-muted: #a1a1aa;
+  --rcu-color-primary: #2dd4bf;
+  --rcu-color-primary-hover: #5eead4;
+  --rcu-color-primary-soft: #134e4a;
+  --rcu-color-primary-fg: #042f2e;
+  --rcu-color-accent: #fb8a78;
+  --rcu-color-accent-soft: #4a1d16;
+  --rcu-color-danger: #fb7185;
+  --rcu-color-danger-soft: #4c0519;
+  --rcu-color-success: #4ade80;
+  --rcu-color-success-soft: #052e16;
+  --rcu-color-warning: #fbbf24;
+  --rcu-color-warning-soft: #422006;
+  --rcu-color-info: #38bdf8;
+  --rcu-color-info-soft: #082f49;
+
+  --rcu-color-bg: #071414;
+  --rcu-color-surface: #0d1f1f;
+  --rcu-color-muted: #16302f;
+  --rcu-color-border: #24413f;
+  --rcu-color-text: #e8f3f2;
+  --rcu-color-text-muted: #93acaa;
+  --rcu-focus-ring: 0 0 0 3px rgb(45 212 191 / 0.4);
+}
+
+/* Shared helpers used by several components. */
+.rcu-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.rcu-menu {
+  position: absolute;
+  z-index: var(--rcu-z-popover);
+  min-width: 180px;
+  margin: 0;
+  padding: var(--rcu-space-1);
+  list-style: none;
+  background: var(--rcu-color-surface);
+  border: 1px solid var(--rcu-color-border);
+  border-radius: var(--rcu-radius-md);
+  box-shadow: var(--rcu-shadow-lg);
+  font-family: var(--rcu-font);
+  font-size: 14px;
+}
+
+.rcu-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--rcu-space-2);
+  width: 100%;
+  padding: var(--rcu-space-2) var(--rcu-space-3);
+  border: none;
+  border-radius: var(--rcu-radius-sm);
+  background: none;
+  color: var(--rcu-color-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rcu-menu__item:hover:not(:disabled),
+.rcu-menu__item:focus-visible,
+.rcu-menu__item[data-active='true'] {
+  outline: none;
+  background: var(--rcu-color-muted);
+}
+
+.rcu-menu__item[aria-selected='true'] {
+  color: var(--rcu-color-primary);
+  font-weight: 600;
+}
+
+.rcu-menu__item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rcu-menu__item--danger {
+  color: var(--rcu-color-danger);
+}
+
+.rcu-menu__separator {
+  height: 1px;
+  margin: var(--rcu-space-1) 0;
+  background: var(--rcu-color-border);
+}
+
+.rcu-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rcu-space-1);
+  font-family: var(--rcu-font);
+  color: var(--rcu-color-text);
+}
+
+.rcu-field__label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rcu-field__hint {
+  font-size: 12px;
+  color: var(--rcu-color-text-muted);
+}
+
+.rcu-field__error {
+  font-size: 12px;
+  color: var(--rcu-color-danger);
+}
+
+.rcu-control {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 38px;
+  padding: var(--rcu-space-2) var(--rcu-space-3);
+  font: inherit;
+  font-size: 14px;
+  color: var(--rcu-color-text);
+  background: var(--rcu-color-surface);
+  border: 1px solid var(--rcu-color-border);
+  border-radius: var(--rcu-radius-md);
+}
+
+.rcu-control:focus-visible,
+.rcu-control:focus-within {
+  outline: none;
+  border-color: var(--rcu-color-primary);
+  box-shadow: var(--rcu-focus-ring);
+}
+
+.rcu-control[aria-invalid='true'] {
+  border-color: var(--rcu-color-danger);
+}
+
+.rcu-control:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rcu-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: var(--rcu-radius-sm);
+  background: none;
+  color: var(--rcu-color-text-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rcu-icon-button:hover {
+  background: var(--rcu-color-muted);
+  color: var(--rcu-color-text);
+}
+
+.rcu-icon-button:focus-visible {
+  outline: none;
+  box-shadow: var(--rcu-focus-ring);
 }

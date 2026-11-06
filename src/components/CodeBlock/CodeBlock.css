@@ -1,0 +1,11 @@
+.rcu-code-block { overflow: hidden; border: 1px solid #1d3b3a; border-radius: var(--rcu-radius-lg); background: #0b1d1d; color: #d7eeeb; font-family: var(--rcu-font); }
+.rcu-code-block__header { display: flex; justify-content: space-between; align-items: center; padding: 6px var(--rcu-space-3); border-bottom: 1px solid #1d3b3a; background: #102827; font-size: 12px; }
+.rcu-code-block__meta { display: flex; gap: var(--rcu-space-2); align-items: center; }
+.rcu-code-block__filename { color: #d7eeeb; font-weight: 600; }
+.rcu-code-block__language { padding: 1px 8px; border-radius: var(--rcu-radius-full); background: #1d3b3a; color: #5eead4; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; font-weight: 700; }
+.rcu-code-block__copy { padding: 3px 10px; border: 1px solid #2b5352; border-radius: var(--rcu-radius-sm); background: none; color: #d7eeeb; font: inherit; cursor: pointer; }
+.rcu-code-block__copy:hover { background: #1d3b3a; }
+.rcu-code-block__copy:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); }
+.rcu-code-block__pre { margin: 0; padding: var(--rcu-space-3) var(--rcu-space-4); overflow-x: auto; font: 13px/1.6 var(--rcu-font-mono); }
+.rcu-code-block__pre:focus-visible { outline: none; box-shadow: inset var(--rcu-focus-ring); }
+.rcu-code-block__number { display: inline-block; width: 2.5em; margin-right: var(--rcu-space-3); color: #5b7f7d; text-align: right; user-select: none; }

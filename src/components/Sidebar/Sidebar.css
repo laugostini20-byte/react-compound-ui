@@ -1,0 +1,18 @@
+.rcu-sidebar { box-sizing: border-box; display: flex; flex-direction: column; gap: var(--rcu-space-4); width: 240px; height: 100%; padding: var(--rcu-space-3); border-right: 1px solid var(--rcu-color-border); background: var(--rcu-color-surface); color: var(--rcu-color-text); font-family: var(--rcu-font); transition: width 0.15s ease; }
+.rcu-sidebar[data-collapsed='true'] { width: 64px; }
+.rcu-sidebar__header { display: flex; align-items: center; justify-content: space-between; gap: var(--rcu-space-2); min-height: 36px; padding: 0 var(--rcu-space-1); font-weight: 700; color: var(--rcu-color-primary); white-space: nowrap; overflow: hidden; }
+.rcu-sidebar[data-collapsed='true'] .rcu-sidebar__header { justify-content: center; }
+.rcu-sidebar__section-title { padding: 0 var(--rcu-space-3) var(--rcu-space-1); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rcu-color-text-muted); }
+.rcu-sidebar[data-collapsed='true'] .rcu-sidebar__section-title { visibility: hidden; height: 0; padding: 0; }
+.rcu-sidebar__list { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.rcu-sidebar__item { display: flex; align-items: center; gap: var(--rcu-space-3); padding: var(--rcu-space-2) var(--rcu-space-3); border-radius: var(--rcu-radius-md); color: var(--rcu-color-text-muted); font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.rcu-sidebar__item:hover { background: var(--rcu-color-muted); color: var(--rcu-color-text); }
+.rcu-sidebar__item:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); }
+.rcu-sidebar__item[aria-current='page'] { background: var(--rcu-color-primary-soft); color: var(--rcu-color-primary); }
+.rcu-sidebar__icon { display: inline-grid; place-items: center; width: 20px; flex-shrink: 0; font-size: 16px; }
+.rcu-sidebar__label { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+.rcu-sidebar__badge { padding: 0 7px; border-radius: var(--rcu-radius-full); background: var(--rcu-color-accent); color: #fff; font-size: 11px; font-weight: 700; line-height: 18px; }
+.rcu-sidebar[data-collapsed='true'] .rcu-sidebar__item { justify-content: center; padding: var(--rcu-space-2); }
+.rcu-sidebar[data-collapsed='true'] .rcu-sidebar__label,
+.rcu-sidebar[data-collapsed='true'] .rcu-sidebar__badge { display: none; }
+.rcu-sidebar__footer { margin-top: auto; }

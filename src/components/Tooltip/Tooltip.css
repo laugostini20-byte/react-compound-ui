@@ -1,0 +1,19 @@
+.rcu-tooltip { position: relative; display: inline-flex; }
+.rcu-tooltip__bubble {
+  position: absolute;
+  z-index: var(--rcu-z-popover);
+  width: max-content;
+  max-width: 240px;
+  padding: 6px 10px;
+  border-radius: var(--rcu-radius-sm);
+  background: var(--rcu-color-text);
+  color: var(--rcu-color-surface);
+  font-family: var(--rcu-font);
+  font-size: 12px;
+  line-height: 1.4;
+  pointer-events: none;
+}
+.rcu-tooltip__bubble--top { bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); }
+.rcu-tooltip__bubble--bottom { top: calc(100% + 8px); left: 50%; transform: translateX(-50%); }
+.rcu-tooltip__bubble--left { right: calc(100% + 8px); top: 50%; transform: translateY(-50%); }
+.rcu-tooltip__bubble--right { left: calc(100% + 8px); top: 50%; transform: translateY(-50%); }

@@ -1,0 +1,33 @@
+.rcu-help-button { position: relative; display: inline-flex; vertical-align: middle; }
+.rcu-help-button__trigger {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1.5px solid var(--rcu-color-primary);
+  border-radius: 50%;
+  background: var(--rcu-color-primary-soft);
+  color: var(--rcu-color-primary);
+  font: 700 12px var(--rcu-font);
+  cursor: pointer;
+}
+.rcu-help-button__trigger:focus-visible { outline: none; box-shadow: var(--rcu-focus-ring); }
+.rcu-help-button__bubble {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -8px;
+  z-index: var(--rcu-z-popover);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 260px;
+  padding: var(--rcu-space-3);
+  border: 1px solid var(--rcu-color-border);
+  border-left: 3px solid var(--rcu-color-accent);
+  border-radius: var(--rcu-radius-md);
+  background: var(--rcu-color-surface);
+  box-shadow: var(--rcu-shadow-lg);
+  color: var(--rcu-color-text-muted);
+  font: 13px/1.5 var(--rcu-font);
+}
+.rcu-help-button__bubble[hidden] { display: none; }
+.rcu-help-button__title { color: var(--rcu-color-text); font-size: 14px; }

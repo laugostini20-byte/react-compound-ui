@@ -1,0 +1,21 @@
+.rcu-dialog {
+  width: calc(100% - 32px);
+  max-height: calc(100% - 64px);
+  padding: 0;
+  border: none;
+  border-radius: var(--rcu-radius-lg);
+  background: var(--rcu-color-surface);
+  color: var(--rcu-color-text);
+  box-shadow: var(--rcu-shadow-lg);
+  font-family: var(--rcu-font);
+}
+.rcu-dialog::backdrop { background: var(--rcu-color-overlay); }
+.rcu-dialog--sm { max-width: 400px; }
+.rcu-dialog--md { max-width: 560px; }
+.rcu-dialog--lg { max-width: 800px; }
+.rcu-dialog__panel { display: flex; flex-direction: column; }
+.rcu-dialog__header { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--rcu-space-4); padding: var(--rcu-space-4) var(--rcu-space-6) 0; }
+.rcu-dialog__title { margin: 0; font-size: 18px; font-weight: 600; }
+.rcu-dialog__description { margin: var(--rcu-space-1) 0 0; font-size: 14px; color: var(--rcu-color-text-muted); }
+.rcu-dialog__body { padding: var(--rcu-space-4) var(--rcu-space-6); font-size: 14px; line-height: 1.55; overflow-y: auto; }
+.rcu-dialog__footer { display: flex; justify-content: flex-end; gap: var(--rcu-space-2); padding: var(--rcu-space-3) var(--rcu-space-6) var(--rcu-space-4); border-top: 1px solid var(--rcu-color-border); }
