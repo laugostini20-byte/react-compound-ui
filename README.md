@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-    <img src="assets/logo.svg" alt="Compound UI" width="360">
-  </picture>
+  <img src="assets/banner.png" alt="Compound UI" width="100%">
 </p>
 
 # react-compound-ui
