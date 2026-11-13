@@ -1,6 +1,7 @@
 .rcu-dialog {
   width: calc(100% - 32px);
   max-height: calc(100% - 64px);
+  margin: auto;
   padding: 0;
   border: none;
   border-radius: var(--rcu-radius-lg);
