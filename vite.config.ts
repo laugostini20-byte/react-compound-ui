@@ -20,6 +20,8 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
+      // Mark the bundle as client code so React Server Component apps (Next.js) can import it.
+      output: { banner: '"use client";' },
     },
     sourcemap: true,
   },
