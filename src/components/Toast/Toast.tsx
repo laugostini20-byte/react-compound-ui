@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import { cx } from '../../utils/cx';
 import './Toast.css';
@@ -38,6 +38,8 @@ export interface ToastProviderProps {
   position?: 'top-right' | 'bottom-right' | 'bottom-center';
 }
 
+const subscribeNoop = () => () => {};
+
 export function ToastProvider({ children, position = 'bottom-right' }: ToastProviderProps) {
   const [toasts, setToasts] = useState<ToastRecord[]>([]);
   const nextId = useRef(1);
@@ -49,11 +51,13 @@ export function ToastProvider({ children, position = 'bottom-right' }: ToastProv
     return id;
   }, []);
   const api = useMemo(() => ({ show, dismiss }), [show, dismiss]);
+  // false during server rendering and hydration, true afterwards, so SSR and the first client render match.
+  const mounted = useSyncExternalStore(subscribeNoop, () => true, () => false);
 
   return (
     <ToastContext.Provider value={api}>
       {children}
-      {typeof document !== 'undefined' &&
+      {mounted &&
         createPortal(
           <div className={cx('rcu-toast-region', `rcu-toast-region--${position}`)} role="region" aria-label="Notifications">
             {toasts.map((toast) => (
